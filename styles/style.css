@@ -1,0 +1,113 @@
+:root {
+    --font-principal: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family:var(--font-principal) ;
+    color: #338475;
+}
+
+.container__cabecalho {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 15%;
+    margin: 1.5rem 3rem;
+}
+
+h1 {
+    margin: 0 6%;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.container__principal {
+    background-color: #338475;
+    height: 76vh;
+    color: #fff;
+    font-weight: bold;
+}
+
+.formulario {
+    padding: 2rem;
+}
+
+.conteudo__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    width: 50%;
+    margin: auto;
+    border: solid 2px #f58634;
+    border-radius: 1rem;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+input {
+    width: 10rem;
+    height: 2rem;
+    border-radius:1rem;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+
+input::placeholder {
+    text-align: center;
+}
+
+
+label {
+    width: 100px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.botao {
+    width: 5rem;
+    position: relative;
+    left: 10%;
+    margin-top:1rem ;
+    background-color: #f58634;
+    color: #fff;
+    font-weight: 400;
+}
+
+.botao:hover {
+    background-color: #fff;
+    color: #f58634;
+    font-weight: 700;
+}
+
+.container__rodape {
+    background-color: #f58634;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
