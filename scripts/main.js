@@ -32,6 +32,8 @@ formulario.addEventListener('submit', (evento) => {
     const profundidade = parseInt(document.getElementById('profundidade').value);
     const altura = parseInt(document.getElementById('altura').value);
 
+    var urlTabela = "../paginas/tabela.html";
+
     longarinas = profundidade + 50;
 
     pranchas = comprimento;
@@ -47,17 +49,10 @@ formulario.addEventListener('submit', (evento) => {
     molduraTopoVert = molduraLatHor;
 
     molduraTopoHor = profundidade - 50;
+
+    window.open(urlTabela, "_blank");
     
-    console.log("Longarina: " + longarinas);
-    console.log("Prancha: " + pranchas);
-    console.log("molduraLatHor: " + molduraLatHor);
-    console.log("molduraLatVert: " + molduraLatVert);
-    console.log("molduraFrontalHor: " + molduraFrontalHor);
-    console.log("molduraFrontalVert: " + molduraFrontalVert);
-    console.log("molduraTopoVert: " + molduraTopoVert);
-    console.log("molduraTopoHor: " + molduraTopoHor);
 
 
-    
 })
 
