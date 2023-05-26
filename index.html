@@ -15,19 +15,19 @@
     </header>
     <main class="container__principal">
         <h2>Caixas Especiais</h2>
-        <form action="#" class="formulario" >
+        <form action="#" class="formulario" id="form" >
             <fieldset class="conteudo__formulario">
                 <div class="form-row">
-                    <label for="#">Comprimento</label>
-                    <input type="number" name="comprimento" placeholder="Insira o valor em MM" required>
+                    <label for="comprimento">Comprimento</label>
+                    <input type="number" id="comprimento" name="comprimento" placeholder="Insira o valor em MM" required>
                 </div>
                 <div class="form-row">
-                    <label for="#">Profundidade</label>
-                    <input type="number" name="profundidade" placeholder="Insira o valor em MM" required>
+                    <label for="profundidade">Profundidade</label>
+                    <input type="number" id="profundidade" name="profundidade" placeholder="Insira o valor em MM" required>
                 </div>
                 <div class="form-row">
-                    <label for="#">Altura</label>
-                    <input type="number" name="altura" placeholder="Insira o valor em MM" required>
+                    <label for="altura">Altura</label>
+                    <input type="number" id="altura" name="altura" placeholder="Insira o valor em MM" required>
                 </div>
                 <input type="submit" class="botao" name="botao" value="Enviar">
             </fieldset>
@@ -36,5 +36,7 @@
     <footer class="container__rodape">
         <p>Desenvolvido por Marcus Lara</p>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
