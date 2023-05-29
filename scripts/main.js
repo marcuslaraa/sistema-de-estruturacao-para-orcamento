@@ -1,58 +1,50 @@
-const formulario = document.getElementById('form');
+const formulario = document.getElementById("form");
 
-let longarinas;
-let longarinasqQtd = 2;
-
-let pranchas;
-let pranchasQtd = 3;
-
-let molduraFrontalHor;
-let molduraFrontalHorQtd = 4;
-
-let molduraFrontalVert;
-let molduraFrontalVertQtd = 4;
-
-let molduraLatHor;
-let molduraLatHorQtd = 4;
-
-let molduraLatVert;
-let molduraLatVertQtd = 4;
-
-let molduraTopoVert;
-let molduraTopoVertQtd = 2;
-
-let molduraTopoHor;
-let molduraTopoHorQtd = 2;
+let itensDoProduto = [
+  { longarina: 0, longarinasqQtd: 2 },
+  { pranchas: 0, pranchasQtd: 3 },
+  { molduraFrontalHor: 0, molduraFrontalHorQtd: 4 },
+  { molduraFrontalVert: 0, molduraFrontalVertQtd: 4 },
+  { molduraLatHor: 0, molduraLatHorQtd: 4 },
+  { molduraLatVert: 0, molduraLatVertQtd: 4 },
+  { molduraTopoHor: 0, molduraTopoHorQtd: 2 },
+  { molduraTopoVert: 0, molduraTopoVertQtd: 2 },
+];
 
 
-formulario.addEventListener('submit', (evento) => {
-    evento.preventDefault();
+    formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault();
+      
+        const comprimento = parseInt(document.getElementById("comprimento").value);
+        const profundidade = parseInt(document.getElementById("profundidade").value);
+        const altura = parseInt(document.getElementById("altura").value);
+      
+        var urlTabela = "../paginas/tabela.html";
+      
+        itensDoProduto[0].longarina = profundidade + 50;
+      
+        itensDoProduto[1].pranchas = comprimento;
+      
+        itensDoProduto[2].molduraFrontalHor = profundidade;
+      
+        itensDoProduto[3].molduraFrontalVert = altura + 66 - 100;
+        
+        itensDoProduto[4].molduraLatHor = comprimento + 50;
+      
+        itensDoProduto[5].molduraLatVert = altura + 21 - 100;
+      
+        itensDoProduto[6].molduraTopoHor = profundidade - 50;
+        
+        itensDoProduto[7].molduraTopoVert = itensDoProduto[4].molduraLatHor;
+      
+        window.open(urlTabela, "_blank");
 
-    const comprimento = parseInt(document.getElementById('comprimento').value);
-    const profundidade = parseInt(document.getElementById('profundidade').value);
-    const altura = parseInt(document.getElementById('altura').value);
+      });
 
-    var urlTabela = "../paginas/tabela.html";
+       const listaItensProdutos = itensDoProduto;
+       export default listaItensProdutos;
 
-    longarinas = profundidade + 50;
-
-    pranchas = comprimento;
-
-    molduraLatHor = comprimento + 50;
-
-    molduraLatVert = altura + 21 - 100;
-
-    molduraFrontalHor = profundidade;
-
-    molduraFrontalVert = altura + 66 - 100;
-
-    molduraTopoVert = molduraLatHor;
-
-    molduraTopoHor = profundidade - 50;
-
-    window.open(urlTabela, "_blank");
-    
+       
 
 
-})
 

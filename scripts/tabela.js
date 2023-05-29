@@ -1,3 +1,5 @@
+import { listaItensProdutos } from "./main";
+
 const tabela = document.getElementById("tabela");
 const tbody = document.createElement("tbody");
 
@@ -15,6 +17,9 @@ for (i = 0; i < 3; i++) {
   }
 
   tbody.appendChild(row);
+  
 }
 
 tabela.appendChild(tbody);
+
+
