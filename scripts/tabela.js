@@ -1,5 +1,3 @@
-import { listaItensProdutos } from "./main";
-
 const tabela = document.getElementById("tabela");
 const tbody = document.createElement("tbody");
 
