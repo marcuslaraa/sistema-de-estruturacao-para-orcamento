@@ -1,7 +1,13 @@
+let objetoArmazenado = localStorage.getItem("Itens");
+let objetoRecuperado = JSON.parse(objetoArmazenado);
+
+console.log(objetoRecuperado)
+
+
 const tabela = document.getElementById("tabela");
 const tbody = document.createElement("tbody");
 
-for (i = 0; i < 3; i++) {
+for (i = 0; i < itensDoProduto.length; i++) {
   let row = document.createElement("tr");
 
   for (j = 0; j < 3; j++) {
@@ -19,5 +25,7 @@ for (i = 0; i < 3; i++) {
 }
 
 tabela.appendChild(tbody);
+
+localStorage.clear();
 
 

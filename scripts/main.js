@@ -39,9 +39,11 @@ formulario.addEventListener("submit", (evento) => {
 
   window.open(urlTabela, "_blank");
 
-  return itensDoProduto;
+  let itensJSON = JSON.stringify(itensDoProduto);
 
+  localStorage.setItem("Itens", itensJSON);
 });
 
 
-console.log(itensDoProduto);
+
+
